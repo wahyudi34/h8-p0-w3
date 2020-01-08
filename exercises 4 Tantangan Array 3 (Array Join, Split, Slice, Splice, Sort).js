@@ -29,15 +29,3 @@ function dataHandling2(data) {
 var input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca"];
 
 dataHandling2(input)
-
-// catatan : mengubah type data date dari string ke number
-
-/**
- * keluaran yang diharapkan (pada console)
- *
- * ["0001", "Roman Alamsyah Elsharawy", "Provinsi Bandar Lampung", "21/05/1989", "Pria", "SMA Internasional Metro"]
- * Mei
- * ["1989", "21", "05"]
- * 21-05-1989
- * Roman Alamsyah
- */
