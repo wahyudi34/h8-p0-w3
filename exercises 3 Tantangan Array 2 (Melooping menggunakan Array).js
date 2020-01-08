@@ -1,20 +1,22 @@
-function dataHandling(input) {
-    var result = []
+function dataHandling(input) {  
+    input[0].splice(2,2,'Bandar Lampung, 21/05/1989')
+    input[1].splice(2,2,'Medan, 10/10/1992')
+    input[2].splice(2,2,'Ambon, 25/12/1965')
+    input[3].splice(2,2,'Martapura, 6/4/1970')
     for(var i=0; i<input.length; i++) {
         for(var j=0; j<input[i].length; j++) {
-            // console.log(input[i][j])
             if(j === 0) {
-                result+= 'Nomor ID: ' + input[i][j] + ' '
+                console.log('Nomor ID: ' + input[i][j] + ' ')
             } else if(j === 1) {
-                result+= 'Nama Lengkap: ' + input[i][j] + ' '
+                console.log('Nama Lengkap: ' + input[i][j] + ' ')
             } else if(j === 2) {
-                result+= 'TTL: ' + input[i][j] + ' '
-            } else if(j === 3) {
-                result+= 'Hobi: ' + input[i][j] + ' '
+                console.log('TTL: ' + input[i][j] + ' ')
+            } else if(j === 3) {                
+                console.log('Hobi: ' + input[i][j] + ' ')
+                console.log(' ')
             }
         }
     }
-    return result
 }    
 var input = [
     ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"],
@@ -23,4 +25,4 @@ var input = [
     ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
 ]
 
-console.log(dataHandling(input))
+dataHandling(input)
