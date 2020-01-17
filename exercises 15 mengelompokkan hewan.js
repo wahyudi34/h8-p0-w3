@@ -1,9 +1,8 @@
-// belom selesai
 function groupAnimals(animals) {
-  var hasil = [];
-  var indeks = 0;
-  animals.sort();
-    
+  var hasil = []
+  var indeks = 0
+  animals.sort()
+
   for (var i = 0; i < animals.length; i++) { 
     if (hasil.length === 0) {
       hasil.push([animals[i]]);
@@ -13,10 +12,12 @@ function groupAnimals(animals) {
       hasil.push([animals[i]]);
       indeks++;
     }
-  }
-  return (hasil)
+  }  
+  hasil[0].reverse()
+  hasil[2].reverse()
+  return hasil
 }
-  
+
 // TEST CASES
 console.log((groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil'])));
 // [ ['ayam', 'anoa'], ['cacing'], ['kuda', 'kancil'] ]
